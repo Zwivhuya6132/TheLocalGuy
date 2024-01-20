@@ -1,0 +1,105 @@
+.reg{
+    width: 50%;
+    margin: 25px auto;
+    border: 2px solid #317773;
+    border-radius: 45px 45px 0 0;
+    overflow: hidden;
+}
+
+.reg-form-con{
+    display: flex;
+}
+
+.reg-img-con{
+    width: 63%;
+}
+
+.reg-form-img{
+    height: 100%;
+    width: 100%;
+}
+
+.reg-tittle{
+    background-color: #317773;
+    display: flex;
+    font-size: 2em;
+    font-weight: 700;
+    color: #E2D1F9;
+    justify-content: center;
+}
+
+.names-con{
+    margin-top: 45px;
+}
+
+.names-con,
+.date-gen,
+.contacts-con,
+.password-con{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.first-n,
+.last-n,
+.dob,
+.gender-con,
+.phone-n,
+.email-add,
+.password-cre{
+    width: 45%;
+}
+
+
+.fname,
+.lname,
+.date,
+.gender,
+.adress,
+.email,
+.phone,
+.password{
+    border: 2px solid #317773;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.date{
+    width: 94%;
+}
+
+.gender{
+    width: 100%;
+}
+
+.home-adress{
+    display: flex;
+    justify-content: space-around;
+    width: 98%;
+    margin-bottom: 20px;
+}
+
+.adress-con{
+    width: 94%;
+}
+
+.adress{
+    display: block;
+    width: 100%;
+}
+
+.submit-butt{
+    display: flex;
+    justify-content: center;
+}
+
+.submit{
+    background-color: #317773;
+    color: #E2D1F9;
+    font-weight: 700;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}

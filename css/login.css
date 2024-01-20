@@ -1,0 +1,58 @@
+.log{
+    width: 45%;
+    margin: 25px auto;
+    border: 2px solid #317773;
+    border-radius: 45px 45px 0 0;
+    overflow: hidden;
+}
+
+.log-form-con{
+    display: flex;
+    align-items: center;
+}
+
+.log-img-con{
+    width: 63%;
+}
+
+.log-form-img{
+    height: 100%;
+    width: 100%;
+}
+
+.log-tittle{
+    background-color: #317773;
+    display: flex;
+    font-size: 2em;
+    font-weight: 700;
+    color: #E2D1F9;
+    justify-content: center;
+}
+
+.log-in{
+    width: 90%;
+}
+
+.uname,
+.Password{
+    border: 2px solid #317773;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 5px;
+    width: 100%;
+}
+
+.submit-butt{
+    display: flex;
+    justify-content: center;
+}
+
+.submit{
+    background-color: #317773;
+    color: #E2D1F9;
+    font-weight: 700;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}

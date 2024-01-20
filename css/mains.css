@@ -1,0 +1,1022 @@
+/* Importing a font from "google fonts" */
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Roboto:wght@300;400;500;700&display=swap');
+
+/* Defining a Default styles for the whole HTML document */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size:16px ;
+    scroll-padding-top:2rem;
+    scroll-behavior:smooth;
+    text-decoration: none;
+}
+
+/* styling the header container */
+.header{
+    display: flex;
+    color: #317773;
+    background-color: #E2D1F9;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+/* Styling the Company name */
+.name{
+    font-size: 1.5em;
+}
+
+/* styling the logo container */
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+
+/* Styling the logo image */
+.logo{
+    width: 50px;
+    height: 50px;
+    border-radius:50% ;
+}
+
+/* The middle section/Search-bar container */
+.searchbar-container{
+    /* background-color:aqua; */
+    display: flex;
+    position: relative;
+    padding: 5px;
+    width: 25%;
+}
+
+/* Giving styles to the search-bar */
+.search-bar{
+    border: 2px solid #317773;
+    border-radius: 25px;
+    background-color: #E2D1F9;
+    padding: 10px 5px;
+    width: 100%;
+}
+
+/* changing the search-bar paceholder color  and size*/
+.search-bar::placeholder{
+    color: #317773;
+    font-weight: 500;
+}
+
+/* Styling and positioning the search icon */
+.search{
+    background-color: #317773;
+    color: #E2D1F9;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    right: 6px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    font-weight: 500;
+}
+
+
+
+/* Styling the menu section/ Right section */
+.menu-section{
+    display: none;
+    justify-content: space-between;
+    /* width: 20%; */
+}
+
+/* Styling the my account and cart button */
+.menu-button, .my-account, .Cart-button{
+    display: flex;
+    position: relative;
+    align-items: center;
+    border-radius: 25px;
+    cursor: pointer;
+    color: #E2D1F9;
+    overflow: hidden;
+    padding:5px 15px;
+    background: linear-gradient(to right, #5d9e9b, #317773);
+}
+
+/* styling how the offcanvas appear when the is on "on" class*/
+.offcanvas-account.on,
+.offcanvas-cart.on,
+.offcanvas-Menu.on{
+    transform: translateY(0);
+}
+
+/* creating an offcanvas  */
+.offcanvas-account,
+.offcanvas-Menu{
+    position: fixed;
+    background: #E2D1F9;
+    width: 27%;
+    bottom: 0;
+    top: 0px;
+    right: 0;
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: all .4s ease;
+    padding: 20px 10.5px;
+}
+
+/* close the offcanvas by clicking the close button */
+.close-menu,
+.close-btn,
+.close-cart{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #E2D1F9;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background-color: #317773;
+    border-radius: 50%;
+    padding: 5px;
+    transition: all .5s;
+}
+
+/* stle the close buttons when hovering */
+.close-menu:hover,
+.close-btn:hover,
+.close-cart:hover{
+    border: 2px solid #317773;
+    background-color: #E2D1F9;
+    color: #317773;
+}
+
+.welcome,
+.have{
+    margin-bottom: 30px;
+}
+
+/* styling the h3 on the offcanvas */
+.welcome h2{
+    color: #317773;
+}
+
+/* giving the paragraphs inside the ofcanvas a color */
+.welcome p,
+.have p
+.benefits li{
+    color:#757575;
+}
+
+/* giving the "I have an...." h4 a margin bottom */
+.have h4{
+    margin-bottom: 10px;
+}
+
+/* styling the button anchor tag */
+.sign-up{
+    margin-bottom: 25px;
+}
+
+/* styling the sign in button */
+.sign-in{
+    width: 100%;
+    height: 45px;
+    color:#E2D1F9;
+    background-color: #317773;
+    border: none;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 1.1em;
+    transition: .4s;
+    cursor: pointer;
+}
+
+/* styling the button when hovering */
+.sign-in:hover{
+    color: #317773;
+    background-color: #E2D1F9;
+    border: solid 2px #317773;
+}
+
+.sec-divider{
+    width: 100%;
+    height: 1px;
+    background-color: #757575;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* styling the benefits list */
+.have ul li{
+    color: #757575;
+    margin-left: 18px;
+    line-height: 25px;
+    font-size: smaller;
+}
+
+.have p{
+    color: #757575;
+}
+
+/* styling the sign in button */
+.register{
+    width: 100%;
+    height: 45px;
+    color: #317773;
+    background-color: #E2D1F9;
+    border: solid 2px #317773;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 1.1em;
+    transition: .5s;
+    cursor: pointer;
+
+}
+
+/* styling the button when hovering */
+.register:hover{
+    color:#E2D1F9;
+    background-color: #317773;
+    border: none;
+}
+
+/* hiding the menu bare on full width */
+.menu-button{
+    display: none;
+}
+
+
+
+/* Making the whish container a position relative */
+.whish{
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 500;
+}
+
+/* styling the wishlist button */
+.whish-list{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px ;
+    height: 35px;
+    font-weight: 700;
+    transition: 0.8s;
+}
+
+/* creating animation when hovering on the Whishlist */
+.whish-list:hover{
+    transform: translateY(-18px);
+    opacity: 1;
+    background-color: #317773;
+    color: #E2D1F9;
+}
+
+/* changing the fon for the heart icon */
+.whish-heart{
+    font-size: 1.5em;
+}
+
+/* animating the woishlist text to appear when hovering */
+.whishlist{
+    position: absolute;
+    top: 65%;
+    opacity: 0;
+    transition: 1s;
+}
+
+/* when hovering the wishlist */
+.whish:hover .whishlist{
+    opacity: 1;
+}
+
+
+/* defining a min width for the cart button */
+.Cart-button{
+    min-width: 30px;
+}
+
+/* Preparing for animation on my account and cart button */
+.my-account::before, .Cart-button::before{
+    content: '';
+    position: absolute;
+    height: 50px;
+    width: 10px;
+    background-color: #f3f3f39f;
+    box-shadow: 0 0 15px #fff;
+    filter: blur(1px);
+    opacity: 0.9;
+    transition: 0.7s;
+    transform: rotate(-20deg) translateX(-40px);
+}
+
+/* setting transition time on animating cart button */
+.Cart-button::before{
+    transition: 1.2s;
+}
+
+
+/* animating my account and cart button only on hovering */
+.my-account:hover::before, .Cart-button:hover::before{
+    transform: rotate(10deg) translate(130px);
+}
+
+/* creating a cart  */
+.offcanvas-cart{
+    position: fixed;
+    background: #E2D1F9;
+    width: 27%;
+    min-width: 350px;
+    bottom: 0;
+    top: 0px;
+    right: 0;
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: all .5s ease;
+    padding: 20px 10.5px;
+}
+
+/* styling the cart header */
+.Cart-header{
+    background-color: #317773;
+    color: #E2D1F9;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.cart-img{
+    width:70px;
+    height: 70px;
+    border-radius: 25px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.grid{
+    display: flex;
+    column-gap: 15px;
+}
+
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap:1rem;
+    margin-top: 1rem;
+}
+
+.detail-box{
+    display: grid;
+    row-gap: 0.5rem;
+}
+
+.cart-product-tittle{
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.cart-price{
+    font-weight: 500;
+}
+
+/* making the cart content scrollable */
+.cart-content{
+    max-height: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.cart-quantity{
+    border: 2px solid #317773;
+    outline-color: #E2D1F9;
+    width: 3rem;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.cart-remove-con{
+    font-size: 16px;
+    color: #E2D1F9;
+    background-color: #317773;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    transition: all .5s;
+
+}
+
+.cart-remove-con:hover{
+    color: #317773;
+    background-color: #E2D1F9;
+    border: 2px solid #317773;
+}
+
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 2px solid #317773;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.total-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.total-price{
+    margin-left: 0.5rem;
+}
+
+.btn-buy{
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background: #317773;
+    color: #E2D1F9;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-buy:hover{
+    background:#E2D1F9 ;
+    color: #317773;
+    border: 1px solid #317773;
+}
+
+/* GIVING THE NAVIGATION CONTAINER STYLES */
+nav{
+    background-color: #317773;
+    padding: 10px 0;
+    /* position: fixed; */
+    left: 0;
+    right: 0;
+    top: 80px;
+    z-index: 900;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Separating the navigation links and removing the bullets */
+.navigation{
+    display: flex;
+    padding: 10px 0;
+    color: #E2D1F9;
+    justify-content: space-around;
+    font-size: 0.9em;
+    list-style-type: none;
+}
+
+.nav-item{
+    margin: 0 12px ;
+}
+
+/* giving the all <a> on the nav section the same styles */
+.nav-item a,
+.track-order a{
+    color: #E2D1F9;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* styling the < */
+.nav-item a:hover,
+.track-order :hover{
+    /* color: #00ffea; */
+    background-color: #E2D1F9;
+    padding: 7px ;
+
+    border-radius: 10px;
+    color: #317773;
+}
+
+
+/* giving th active link a different style */
+.active a{
+    background-color: #E2D1F9;
+    padding: 7px ;
+    border-radius: 12px;
+    color: #317773;
+}
+
+
+/* styling the "track order container" */
+.track-order{
+    display: flex;
+    margin-right: 30px;
+    align-items: center;
+    width: auto;
+    color: #E2D1F9;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+/*****************************************SLIDE SHOW STYLES**********************************************************/
+
+.slideshow-sec{
+    height: 350px;
+    width: 97%;
+    margin: 20px auto 0 auto;
+}
+
+.slides{
+    height: 100%;
+}
+
+.slides .imgs{
+    width: 100%;
+    height: 100%;
+}
+
+/*****************************************DISCOUNT CONTAINERS STYLES**********************************************************/
+
+.discount{
+    background-color: #E2D1F9;
+    width: 97%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr)
+}
+
+.discount-1{
+    text-align: center;
+    border-right: 1px solid;
+}
+
+.dis-perc{
+    font-size: 4em;
+}
+
+.off-en{
+    background-color: #317773;
+    padding: 2px;
+    font-size: 0.7em;
+    color: #E2D1F9;
+}
+
+.order-amount{
+    font-size: 1.5em;
+}
+
+.discount-code{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.code{
+    background-color: #317773;
+    color: #E2D1F9;
+    font-weight: 700;
+    font-size: 2.5em;
+    padding: 10px;
+}
+
+/*****************************************SHOP BY CATEGORIES STYLES**********************************************************/
+
+
+.cate-tittle{
+    margin: 30px  auto;
+    width: 97%;
+    font-size: 4em;
+    font-weight: bolder;
+    text-align: center;
+
+}
+
+.categories{
+    background-color: #317773;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    column-gap: 15px;
+    row-gap: 15px;
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+.cat-1{
+    background-color: #E2D1F9;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10%;
+
+}
+
+.cat-img{
+    width: 50%;
+    height: 100%;
+}
+
+.cat-1 p{
+    font-size: 2em;
+    font-weight: 700;
+    
+}
+
+/*****************************************TOP PRODUCTS**********************************************************/
+
+
+.top-slider-con{
+    display: grid;
+    width: 94%;
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 55px;
+}
+
+.shop-item-tittle{
+    font-weight: 700;
+    margin-top: 0;
+    font-size: 1.1rem;
+}
+
+.shop-item-price{
+    font-size: 1.1rem;
+}
+
+.buttons-auto{
+    display: flex;
+    background-color: #317773;
+    justify-content: center;
+
+}
+
+.shop-item-image{
+    width: 100%;
+    height: 250px;
+    border-radius: 25px 25px 0 0;
+    border-bottom: 2px solid #317773;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.shop-item-button{
+    padding: 7px;
+    border: 2px solid #E2D1F9;
+    background-color: #317773;
+    color: #E2D1F9;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
+.product-details{
+    background-color: #E2D1F9;
+    line-height: 2rem;
+    margin-top: 0;
+}
+
+.product-container{
+    display: flex;
+
+}
+
+.shop-item-button:hover{
+    background-color: #E2D1F9;
+    border: 2px solid #317773;
+    color: #317773;
+}
+
+/*****************************************OUR SERVIVES**********************************************************/
+
+.we-beleave{
+    font-size: 2em;
+}
+
+.whether{
+    font-size: 1.2em;
+}
+
+.our-service{
+
+    padding: 35px;
+    background-color: #317773;
+    /* height: 350px; */
+    justify-content: center;
+    text-align: center;
+    margin: 25px auto;
+    color: #E2D1F9;
+    /* width: 90%; */
+  }
+  
+  .container-one{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container-two{
+    display: flex;
+  
+  }
+  
+  .img-cover{
+    display: flex;
+    background-color: white;
+    width:70px;
+    height:70px;
+    border-radius: 50%;
+    justify-content: center;
+    margin: 20px 78px;
+    border: solid 3px #E2D1F9;
+  
+  }
+  
+  .icons-one{
+    width:35px;
+    height: 35px;
+    padding: 15px;
+  }
+  
+  .done{
+    display: flex;
+    justify-content: center;
+   
+  }
+  
+  .davhana{
+    margin:0 75px 0 75px;
+  
+  }
+  
+  .davhana1{
+    margin:0 85px 0 55px;
+  
+  }
+  
+  .davhana2{
+    margin:0 5px;
+  
+  }
+  
+  .davhana3{
+    padding:0 105px 0 78px;
+  
+  }
+  
+  .davhana4{
+    margin:0x;
+  
+  }
+
+/*****************************************SUBSCRIPTION**********************************************************/
+
+
+  .subscription{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* height: 100px; */
+    justify-items: center;
+    /* width:100%; */
+    background-color:#317773;
+    margin-top: 25px;
+  }
+  
+  .hook-up{
+  
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    color:white;
+    padding: 15px;
+  }
+  
+  .hook{
+    padding-right: 70px;
+  }
+
+  .hook-inp{
+    background-color: #E2D1F9;
+    padding: 5px;
+    border: solid 2px #317773;
+    border-radius: 15px;
+  }
+
+  .hook-inp::placeholder{
+    color: #317773;
+  }
+
+  .hook-but{
+    border-radius: 15px;
+    padding: 5px;
+    background-color: #E2D1F9;
+    color: #317773;
+    border: none;
+    font-weight: 500;
+  }
+
+  .hook-but:hover{
+    background-color: #317773;
+    color: #E2D1F9;
+    border: 2px solid #E2D1F9;
+  }
+
+/*****************************************FOOTER**********************************************************/
+
+footer{
+    background-color: #317773;
+    height: 170px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-email{
+    padding: 7px;
+    width: 60%;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: #E2D1F9;
+    border: 2px solid #317773;
+}
+
+.subscribe-button{
+    width: 30%;
+    padding: 5px;
+    background-color: #317773;
+    border: 2px solid #E2D1F9;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #E2D1F9;
+    font-weight: 700;
+}
+
+.social{
+    color: #E2D1F9;
+    font-size: 35px;
+
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-around;
+}
+
+.follow{
+    margin-bottom: 10px;
+}
+
+.sec-one,
+.sec-two,
+.sec-three,
+.sec-four{
+    color: #E2D1F9;
+}
+
+
+
+
+/*****************************************MEDIA QUIRIES**********************************************************/
+/* 
+@media screen and (max-width:1340px) {
+
+    .categories{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+
+
+} 
+
+@media screen and (max-width:1201px) {
+
+    .account-name{
+        display: none;
+        max-width: 30px;
+    }
+
+    .offcanvas-account{
+        width: 33%;
+        min-width: 350px;
+    }
+
+    .searchbar-container{
+        min-width: 250px;
+    }
+
+    .logo-container{
+        min-width: 260px;
+    }
+} 
+
+@media screen and (max-width:1084px) {
+
+    .categories{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4,1fr);
+    }
+
+
+} 
+
+@media screen and (max-width:860px) {
+
+    .menu-section{
+        width: 17%;
+    }
+
+    .Cart-button{
+        padding: 10px 15px;
+    } 
+
+    .whish{
+        display: none;
+    } 
+
+} 
+
+@media screen and (max-width:765px) {
+
+    .menu-button{
+    display:flex;
+    justify-content: center;
+    max-width: 30px;
+    }
+
+    .menu-section{
+        min-width: 120px;
+    }
+ 
+    .my-account{
+        display: none;
+    } 
+
+    .searchbar-container{
+        display: none;
+    }
+
+    .logo-container{
+        min-width: 260px;
+    }
+} 
+
+@media screen and (max-width:740px) {
+
+    .categories{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4,1fr);
+    }
+
+
+} 
+
+@media screen and (max-width:580px) {
+    
+    nav{
+        display: none;
+    }
+
+    .offcanvas-Menu{
+        width: 70%;
+    }
+
+    .slideshow-sec{
+        height: 250px;
+    }
+} 
+
+@media screen and (max-width:478px) {
+    .header{
+        justify-content: space-around;
+    }
+
+    .logo-container{
+        min-width: 100px;
+    }
+
+    .name{
+        display: none;
+    }
+} */

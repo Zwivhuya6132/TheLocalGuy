@@ -1,0 +1,188 @@
+
+
+/*  */
+
+.cart-img{
+    width:70px;
+    height: 70px;
+    border-radius: 25px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.grid{
+    display: flex;
+    column-gap: 15px;
+}
+
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap:1rem;
+    margin-top: 1rem;
+}
+
+.detail-box{
+    display: grid;
+    row-gap: 0.5rem;
+}
+
+.cart-product-tittle{
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.cart-price{
+    font-weight: 500;
+}
+
+.cart-quantity{
+    border: 2px solid #317773;
+    outline-color: #E2D1F9;
+    width: 3rem;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.cart-remove-con{
+    font-size: 16px;
+    color: #E2D1F9;
+    background-color: #317773;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    transition: all .5s;
+
+}
+
+.cart-remove-con:hover{
+    color: #317773;
+    background-color: #E2D1F9;
+    border: 2px solid #317773;
+}
+
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 2px solid #317773;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.total-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.total-price{
+    margin-left: 0.5rem;
+}
+
+.btn-buy{
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background: #317773;
+    color: #E2D1F9;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-buy:hover{
+    background:#E2D1F9 ;
+    color: #317773;
+    border: 1px solid #317773;
+}
+
+/* This is the slide show section styles */
+
+
+
+
+.cellular-grid{
+    display: grid;
+    height: fit-content;
+    margin-top: 35px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 15px;
+    row-gap: 20px;
+    padding: auto;
+
+}
+
+.shop-item{
+    border: 2px solid #317773 ;
+    border-radius: 25px 25px 0 0;
+    width: 80%;
+    margin-left: 20px;
+    display: grid;
+
+}
+
+.shop-item-tittle{
+    font-weight: 700;
+    margin-top: 0;
+    font-size: 1.1rem;
+}
+
+.shop-item-price{
+    font-size: 1.1rem;
+}
+
+.buttons-auto{
+    display: flex;
+    background-color: #317773;
+    justify-content: center;
+
+}
+
+.shop-item-image{
+    width: 100%;
+    height: 250px;
+    border-radius: 25px 25px 0 0;
+    border-bottom: 2px solid #317773;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.shop-item-button{
+    padding: 7px;
+    border: 2px solid #E2D1F9;
+    background-color: #317774a0;
+    color: #E2D1F9;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
+.product-details{
+    background-color: #E2D1F9;
+    display: flex;
+    justify-content: center;
+    line-height: 2rem;
+    margin-top: 0;
+}
+
+.product-container{
+    display: flex;
+
+}
+
+.shop-item-button:hover{
+    background-color: #E2D1F9;
+    border: 2px solid #317773;
+    color: #317773;
+}
